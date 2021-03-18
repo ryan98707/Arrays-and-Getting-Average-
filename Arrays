@@ -1,0 +1,520 @@
+
+public class assingment {
+	static int[] attractions_2018 = {223, 440, 403, 994 , 225,225,334,667,460,370};      //This is the array which can be read through the entire program 
+	static int[] attractions_2019 = {250,486,466,998,256,394,413,725,522,277};		 	//This is the array which can be read through the entire program 
+	
+
+
+	
+
+	public static void main(String [] arguments){
+	
+	averagevistors();     						//These are all the methods names which is called by the name
+	GettingMax();								//These are all the methods names which is called by the name
+	GettingSmall();								//These are all the methods names which is called by the name
+	AverageForEachBelfastZoo();					//These are all the methods names which is called by the name
+	AverageForEach_RopBridge();					//These are all the methods names which is called by the name	
+	AverageForEach_Derryswall();				//These are all the methods names which is called by the name
+	AverageForEach_Giants();					//These are all the methods names which is called by the name
+	AverageForEach_Oxford();					//These are all the methods names which is called by the name
+	AverageForEach_PickieFunPark();				//These are all the methods names which is called by the name
+	AverageForEach_Guildhall();					//These are all the methods names which is called by the name
+	AverageForEach_Titanic();					//These are all the methods names which is called by the name
+	AverageForEach_Ulster();					//These are all the methods names which is called by the name
+	AverageForEach_W5();						//These are all the methods names which is called by the name
+		
+	
+	}
+	public static void averagevistors(){										//This is the Average Vistors Method
+		
+		int total = 0;															//Declearing Verablies
+		int average;															//Declearing Verablies	
+		
+		
+		for(int count = 0; count<10; count++){									//For loop to get all the content of the arry
+			{
+				total = total + attractions_2018[count];						//This will add the total amount of the array for 2018
+				average = total/attractions_2018.length;						//This will get the average
+			}
+
+		}
+		average = total/attractions_2018.length;								//This sum is the total divided by the length of the array to get the average
+
+		System.out.println("\nAverage Attractions for 2018: " + average);		//This prints out the average to the screen
+		
+		for(int count = 0; count<10; count++){									//This is the for loop to get the average for 2019
+			{
+				total = total + attractions_2019[count];						//This will add the total amount of the array for 2019
+				average = total/attractions_2019.length;						//This will get the average
+			}
+
+		}
+		average = total/attractions_2019.length;								//This sum is the total divided by the length of the array to get the average
+
+		System.out.println("\nAverage Attractions for 2019: " + average);		//This is the for loop to get the average for 2019
+		
+		}
+		
+	
+	public static void GettingMax(){											//This is the method for getting Max number inside the Array
+		
+		
+		int max;																//Declearing Verablies
+		int count;																//Declearing Verablies
+		max = attractions_2018[0];												//Declearing Verablies
+		int total = 0;															//Declearing Verablies
+		int total1 = 0;															//Declearing Verablies
+		 
+		 for(count = 0; count < attractions_2018.length; count++){				//This is For Loop to get the Top number in the arrray 
+			 
+			 if(attractions_2018[count] > max){									//This is an if statement stating that if the array is less than the max number print out max
+				 	
+				 max = attractions_2018[count];									//Max is equal to the highest number in attractions 2018
+			 } 
+		 }
+		 System.out.println("\nThis is the max number for 2018: " + max);		//Print out Max Number
+		 
+		 for(count = 0; count<10; count++)										//This is to count all the numbers up in the array and print them to the screen.
+		 {
+			 total = total + attractions_2018[count];							// This total adds them up and stores them in the total varible.
+		 }
+		 
+		 System.out.println("\nTotal amonut for 2018: " + total);				// This prints out the total varible to the console
+		 
+		 
+		 
+		
+		
+	 for(count = 0; count < attractions_2019.length; count++){					//This is For Loop to get the Top number in the arrray
+		 
+		 if(attractions_2019[count] > max){										//This is an if statement stating that if the array is less than the max number print out max
+			 
+			 max = attractions_2019[count];										//Max is equal to the highest number in attractions 2019
+		 } 
+	 }
+	 System.out.println("\nThis is the max number for 2019: " + max);			//Print out Max Number
+	 
+	 for(count = 0; count<10; count++)											//This is to count all the numbers up in the array and print them to the screen.
+	 {	
+		 total1 = total1 + attractions_2019[count];								// This total adds them up and stores them in the total varible.
+	 }	
+	 
+	 System.out.println("\nTotal amonut for 2019: " + total1);					// This prints out the total varible to the console
+	 	
+	 
+	 
+	}
+	
+		
+	public static void GettingSmall(){											// This is the method for Getting the Small number in the array 
+		
+		int small;																//Declearing Verablies
+		int count;																//Declearing Verablies	
+		small = attractions_2018[0];											//Declearing Verablies
+		int smaller = attractions_2019[0];										//Declearing Verablies
+		
+		for(count = 0; count <attractions_2018.length; count++){				//This For loop states that attractions 2018 is less than 
+			
+			if(attractions_2018[count] < small){								//The if statement says that if attractions is less than small then small is equal to attractions
+				
+				small = attractions_2018[count];								// the smallest number is stored in small varible
+			
+			}
+			
+		}
+		System.out.println("\nThis is the smallest number in 2018: " + small);	// This is then printed out to the screen
+		
+
+		for(count = 0; count <attractions_2019.length; count++){				//This For loop states that attractions 2018 is less than 
+			
+			if(attractions_2019[count] < small){								//The if statement says that if attractions is less than small then small is equal to attractions
+				
+				small = attractions_2019[count];								// the smallest number is stored in small varible
+			
+			}
+			
+		}	
+		System.out.println("\nThis is the smallest number in 2019: " + smaller);	// This is then printed out to the screen
+		
+		
+	}
+	
+	public static void AverageForEachBelfastZoo(){								//This is the method for Average_For_Each_Belfast_Zoo 
+	
+		int count;																//Declearing Verablies
+		int total = 0;															//Declearing Verablies
+		int average = 0;														//Declearing Verablies
+		double percentage = 0;													//Declearing Verablies
+		double percentagetot = 0;												//Declearing Verablies
+		double percent = 100;													//Declearing Verablies
+		double amount;															//Declearing Verablies
+		double percentage_increase;												//Declearing Verablies
+		
+		
+		for(count = 0; count<1; count++){										//This for loop is stating that count is equal to number 1 in the array
+			
+			total = total + attractions_2018[count];							//The total is equal to attractions 2018
+			total = total + attractions_2019[count];							//The total is equal to attractions 2019
+			
+		}
+		System.out.println("\nnumber 1 for 2018: " + total);					//This will print out total to the screen
+		
+		average = total / 2;													// This sum will get the average for 2018
+		
+		System.out.println("\nThis is the average for Belfast Zoo for the past two Years: " + average);		//This will print the average to the screen
+		
+		percentagetot = attractions_2019[0] - attractions_2018[0];				//This says that percentagetot is the first number in the array in 2019 take away from 2018
+		
+		percentage = percentagetot / attractions_2018[0];						//Percentage is equal to percentagetot divided by attractions 
+		
+		amount = percentage * percent;											//This sums gets the percentage change between the first two attractions 
+		
+		System.out.println("There is a increase of %" + amount);				//This will print this out to the screen
+		
+		amount = 1.12;															//This is the percentage change in a whole number and not in a percentage
+		
+		percentage_increase = amount * average;									//This will get the future projections for 2020
+		
+		System.out.println("This is the percentage increase for Belfast zoo: " + percentage_increase);		//This is that number printed out to the screen
+		
+		
+		
+	
+	
+	
+}
+	public static void AverageForEach_RopBridge(){								//This is the method for Average_Rope_Bridge
+		
+		
+		int total = 0;															//Declearing Verablies
+		int average = 0;														//Declearing Verablies
+		double percentage = 0;													//Declearing Verablies
+		double percentagetot = 0;												//Declearing Verablies
+		double percent = 100;													//Declearing Verablies
+		double amount;															//Declearing Verablies
+		double percentage_increase;												//Declearing Verablies
+		
+		total = attractions_2018[1] + attractions_2019[1];						//This will add up to the two contents in the array
+		
+		average = total / 2;													//This will get the average of the two contents of the array
+		
+		System.out.println("\nThis is the Average for the past 2 years on the Rop Bridge: " + average);		//This will print it out to the screen
+		
+		percentagetot = attractions_2019[1] - attractions_2018[1];				//This will get the percentage total
+		
+		percentage = percentagetot / attractions_2018[1];						//Percentage is equal to percentagetot divided by attractions 			
+		
+		amount = percentage * percent;											//This sums gets the percentage change between the first two attractions
+		
+		System.out.println("There is a increase of  %"  + amount);				//This will print this out to the screen
+	
+		amount = 1.10;															//This is the percentage change in a whole number and not in a percentage
+		
+		percentage_increase = amount * average;									//This will get the future projections for 2020
+		
+		System.out.println("This is the percentage increase for Rop Bridge: " + percentage_increase);		//This is that number printed out to the screen
+	
+	
+	
+}
+
+	public static void AverageForEach_Derryswall(){								//This is the method for Average_derrrys wall
+		
+	
+		int total = 0;															//Declearing Verablies
+		int average = 0;														//Declearing Verablies
+		double percentage = 0;													//Declearing Verablies
+		double percentagetot = 0;												//Declearing Verablies
+		double percent = 100;													//Declearing Verablies
+		double amount;															//Declearing Verablies
+		double percentage_increase;												//Declearing Verablies
+		
+		total = attractions_2018[2] + attractions_2019[2];						//This will add up to the two contents in the array		
+		
+		average = total / 2;													//This will get the average of the two contents of the array								
+		
+		System.out.println("\nThis is the Average for the past 2 years on the Derryswall: " + average);			//This will print it out to the screen
+		
+		percentagetot = attractions_2019[2] - attractions_2018[2];				//This will get the percentage total
+		
+		percentage = percentagetot / attractions_2018[2];						//Percentage is equal to percentagetot divided by attractions 
+		
+		amount = percentage * percent;											//This sums gets the percentage change between the first two attractions
+		
+		System.out.println("There is a increase of  %"  + amount);				//This will print this out to the screen
+		
+		amount = 1.15;															//This is the percentage change in a whole number and not in a percentage
+		
+		percentage_increase = amount * average;									//This will get the future projections for 2020
+		
+		System.out.println("This is the percentage increase for Derry's Wall: " + percentage_increase);			//This is that number printed out to the screen
+	
+	
+	
+}
+
+	public static void AverageForEach_Giants(){									//This is the method for Average_Gaints Causeway
+		
+		
+		int total = 0;															//Declearing Verablies
+		int average = 0;														//Declearing Verablies
+		double percentage = 0;													//Declearing Verablies
+		double percentagetot = 0;												//Declearing Verablies
+		double percent = 100;													//Declearing Verablies
+		double amount;															//Declearing Verablies
+		double percentage_increase;												//Declearing Verablies
+		
+		total = attractions_2018[3] + attractions_2019[3];						//This will add up to the two contents in the array	
+		
+		average = total / 2;													//This will get the average of the two contents of the array
+		
+		System.out.println("\nThis is the Average for the past 2 years on the Gaints Causeway: " + average);	//This will print it out to the screen
+		
+		percentagetot = attractions_2019[3] - attractions_2018[3];				//This will get the percentage total
+			
+		percentage = percentagetot / attractions_2018[3];						//This will get the percentage total
+		
+		amount = percentage * percent;											//This sums gets the percentage change between the first two attractions
+		
+		System.out.println("There is a increase of  %"  + amount);				//This will print this out to the screen
+		
+		amount = 1.04;															//This is the percentage change in a whole number and not in a percentage
+		
+		percentage_increase = amount * average;									//This will get the future projections for 2020
+		
+		System.out.println("This is the percentage increase for Gaints Causeway: " + percentage_increase);		//This is that number printed out to the screen
+	
+	
+	
+}
+
+	public static void AverageForEach_Oxford(){									//This is the method for Average_Oxford Island
+			
+		
+		int total = 0;															//Declearing Verablies
+		int average = 0;														//Declearing Verablies
+		double percentage = 0;													//Declearing Verablies
+		double percentagetot = 0;												//Declearing Verablies
+		double percent = 100;													//Declearing Verablies
+		double amount;															//Declearing Verablies	
+		double percentage_increase;												//Declearing Verablies
+		
+		total = attractions_2018[4] + attractions_2019[4];						//This will add up to the two contents in the array	
+		
+		average = total / 2;													//This will get the average of the two contents of the array
+		
+		System.out.println("\nThis is the Average for the past 2 years on the Oxford Island: " + average);	//This is that number printed out to the screen
+		
+		percentagetot = attractions_2019[4] - attractions_2018[4];				//This will get the percentage total
+			
+		percentage = percentagetot / attractions_2018[4];						//This will get the percentage
+		
+		amount = percentage * percent;											//This will get the Amount
+		
+		System.out.println("There is a increase of  %"  + amount);				//This will print this out to the screen
+	
+		amount = 1.13;															//This is the percentage change in a whole number and not in a percentage
+		
+		percentage_increase = amount * average;									//This will get the future projections for 2020
+		
+		System.out.println("This is the percentage increase for Oxford Island: " + percentage_increase);		//This is that number printed out to the screen
+		
+		
+}
+
+
+	public static void AverageForEach_PickieFunPark(){							//This is the method for Average Pickie Fun Park
+		
+		
+		int total = 0;															//Declearing Verablies
+		int average = 0;														//Declearing Verablies
+		double percentage = 0;													//Declearing Verablies
+		double percentagetot = 0;												//Declearing Verablies
+		double percent = 100;													//Declearing Verablies
+		double amount;															//Declearing Verablies	
+		double percentage_increase;												//Declearing Verablies
+		
+		total = attractions_2018[5] + attractions_2019[5];						//This will add up to the two contents in the array	
+		
+		average = total / 2;													//This will get the average of the two contents of the array
+		
+		System.out.println("\nThis is the Average for the past 2 years on the Pickie Fun Park: " + average);		//This is that number printed out to the screen
+		
+		percentagetot = attractions_2019[5] - attractions_2018[5];				//This will get the percentage total
+		
+		percentage = percentagetot / attractions_2018[5];						//This will get the percetage
+		
+		amount = percentage * percent;											//This will get  the amount
+		
+		System.out.println("There is a increase of  %"  + amount);				//This will print this out to the screen
+		
+		amount = 1.75;															//This is the percentage in a whole number 
+		
+		percentage_increase = amount * average;									//This will get the future projections for 2020
+		
+		System.out.println("This is the percentage increase for Pickie Fun Park: " + percentage_increase);		//This will print it out to the screen
+	
+	
+	
+	
+}
+
+	public static void AverageForEach_Guildhall(){								//This is the method for Average Guildhall 
+		
+	
+		int total = 0;															//Declearing Verablies
+		int average = 0;														//Declearing Verablies
+		double percentage = 0;													//Declearing Verablies
+		double percentagetot = 0;												//Declearing Verablies
+		double percent = 100;													//Declearing Verablies
+		double amount;															//Declearing Verablies
+		double percentage_increase;												//Declearing Verablies
+		
+			
+		total = attractions_2018[6] + attractions_2019[6];						//This will add up to the two contents in the array	
+			
+		average = total / 2;													//This will get the average of the two contents of the array
+		
+		System.out.println("\nThis is the Average for the past 2 years on The Guild Hall: " + average);			//This is that number printed out to the screen
+		
+		percentagetot = attractions_2019[6] - attractions_2018[6];				//This will get the percentage total
+		
+		percentage = percentagetot / attractions_2018[6];						//This will get the percetage
+		
+		amount = percentage * percent;											//This will get  the amount
+		
+		System.out.println("There is a increase of  %"  + amount);				//This will print this out to the screen
+			
+		amount = 1.23;															//This is the percentage in a whole number 
+		
+		percentage_increase = amount * average;									//This will get the future projections for 2020
+		
+		System.out.println("This is the percentage increase for Guild Hall: " + percentage_increase);		//This will print it out to the screen
+	
+	
+	
+}
+	
+	public static void AverageForEach_Titanic(){								//This is the method for Average Titanic Belfast
+		
+
+		int total = 0;															//Declearing Verablies
+		int average = 0;														//Declearing Verablies
+		double percentage = 0;													//Declearing Verablies
+		double percentagetot = 0;												//Declearing Verablies
+		double percent = 100;													//Declearing Verablies
+		double amount;															//Declearing Verablies
+		double percentage_increase;												//Declearing Verablies
+		
+		total = attractions_2018[7] + attractions_2019[7];						//This will add up to the two contents in the array
+		
+		average = total / 2;													//This will get the average of the two contents of the array
+		
+		System.out.println("\nThis is the Average for the past 2 years on the Titanic Belfast: " + average);		//This is that number printed out to the screen
+		
+		percentagetot = attractions_2019[7] - attractions_2018[7];				//This will get the percentage total
+		
+		percentage = percentagetot / attractions_2018[7];						//This will get the percetage
+			
+		amount = percentage * percent;											//This will get  the amount
+		
+		System.out.println("There is a increase of  %"  + amount);				//This will print this out to the screen
+		
+		amount = 1.08;															//This is the percentage in a whole number 
+		
+		percentage_increase = amount * average;									//This will get the future projections for 2020
+		
+		System.out.println("This is the percentage increase for Titanic Belfast: " + percentage_increase);			//This will print it out to the screen
+	
+	
+	
+}	
+	public static void AverageForEach_Ulster(){									//This is the method for Average Ulster Meusumn
+		
+
+		int total = 0;															//Declearing Verablies
+		int average = 0;														//Declearing Verablies
+		double percentage = 0;													//Declearing Verablies
+		double percentagetot = 0;												//Declearing Verablies
+		double percent = 100;													//Declearing Verablies
+		double amount;															//Declearing Verablies
+		double percentage_increase;												//Declearing Verablies
+			
+		total = attractions_2018[8] + attractions_2019[8];						//This will add up to the two contents in the array
+		
+		average = total / 2;													//This will get the average of the two contents of the array
+		
+		System.out.println("\nThis is the Average for the past 2 years on the Uslster Museum: " + average);			//This is that number printed out to the screen
+		
+		percentagetot = attractions_2019[8] - attractions_2018[8];				//This will get the percentage total
+		
+		percentage = percentagetot / attractions_2018[8];						//This will get the percetage
+		
+		amount = percentage * percent;											//This will get  the amount
+		
+		System.out.println("There is a increase of  %"  + amount);				//This will print this out to the screen
+		
+		amount = 1.13;															//This is the percentage in a whole number
+		
+		percentage_increase = amount * average;									//This will get the future projections for 2020
+		
+		System.out.println("This is the percentage increase for Ulster Museum: " + percentage_increase);			//This will print it out to the screen
+		
+	
+	
+}
+	public static void AverageForEach_W5(){										//This is the method for Average W5 Belfast
+		
+	
+		int total = 0;															//Declearing Verablies
+		double average = 0;														//Declearing Verablies
+		double percentage = 0;													//Declearing Verablies
+		double percentagetot = 0;												//Declearing Verablies
+		double percent = 100;													//Declearing Verablies
+		double amount;															//Declearing Verablies
+		double percentage_increase;												//Declearing Verablies
+		double percentagetake;													//Declearing Verablies
+		
+		total = attractions_2018[9] + attractions_2019[9];						//This will add up to the two contents in the array
+			
+		average = total / 2;													//This will get the average of the two contents of the array
+		
+		System.out.println("\nThis is the Average for the past 2 years on W5 who What Where When Why: " + average);		//This is that number printed out to the screen
+			
+		percentagetot = attractions_2019[9] - attractions_2018[9];				//This will get the percentage total
+		
+		percentage = percentagetot / attractions_2018[9];						//This will get the percetage
+			
+		amount = percentage * percent;											//This will get  the amount
+		
+		System.out.println("There is a decrease  of  %"  + amount);				//This will print this out to the screen
+		
+		amount = 1.25;															//This is the percentage in a whole number
+			
+		percentage_increase = amount * average;								//This will get the future projections for 2020
+		
+		percentagetake = percentage_increase - average;							//There is an added step as you have to take away as the numbers have went down.. This is percentage minus is equal to percentage increase which is 403 - average which is 323 so it is 403 - 323 = 80																
+		
+		average = average - percentagetake;										// Then is is the sum of average minus the percentage minus which the sum is 323 - 80 and this will get you the final number
+		
+		
+		
+		System.out.println("This is the percentage increase for W5: " + average); // This will print the final number out to the screen
+		
+	
+	
+	
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
